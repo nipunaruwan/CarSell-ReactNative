@@ -8,11 +8,12 @@ export default function App() {
   return (
   
 
-    <View>
-      
+   
+      <Login/>
+
 
   
-    </View>
+  
    
   );
 }
