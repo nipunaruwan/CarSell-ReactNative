@@ -2,7 +2,8 @@ import React from "react";
 import { View,Text, StyleSheet} from "react-native";
 import { NativeBaseProvider, Box, Stack, Input, Center, Image } from "native-base";
 import { Button } from "native-base";
-import Logintxt from "../Component/logintxt";
+
+
 
 export default function Login(){
 
@@ -22,7 +23,7 @@ export default function Login(){
         <Button mb="2.5" mt="5" style={style.btn} size="sm">Login</Button>
       </Stack>  
 
-      
+    
     </NativeBaseProvider>
   )
 }

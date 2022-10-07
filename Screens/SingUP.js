@@ -1,51 +1,72 @@
 import React from "react";
-import { View ,Text,  StyleSheet,Box} from "react-native";
-import { NativeBaseProvider,Stack,Input,Button } from "native-base";
+import { View ,Text,StyleSheet,Box} from "react-native";
+import { NativeBaseProvider,Stack,Input,Image,Icon,MaterialIcons, InputLeftElement } from "native-base";
+import { border } from "native-base/lib/typescript/theme/styled-system";
+import Button from "../Component/Button";
 
 
 
 
 export default function SingUP(){
 return(
-    <NativeBaseProvider >
-         <Text style={style.text}>Bold</Text>
+    <NativeBaseProvider style={style.pannel}>
+       
+         <Text style={style.text}></Text>
           <Stack  space={4} w="75%" maxW="300px" mx="auto" style={style.txtContainer}>
-          <Input variant="outline" placeholder=" name" />
-          <Input variant="outline" placeholder="Address" />
-        <Input variant="outline" placeholder="Contact" />
-        <Input variant="outline" placeholder="Email" />
-        <Input variant="outline" placeholder="password" />
-        <Button mb="2.5" mt="5" style={style.btn} size="sm">Signup</Button>
+          <Input variant="rounded" placeholder=" name" />
+          <Input variant="rounded" placeholder="Address" />
+        <Input variant="rounded" placeholder="Contact" />
+        <Input variant="rounded" placeholder="Email" />
+        <Input variant="rounded" placeholder="password" />
+
+        <Input w={{
+      base: "75%",
+      md: "25%"
+    }} InputLeftElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="muted.400" />} placeholder="Name" />
+        
+       
+      
       </Stack>  
+
+      <Image
+         style={{height:100, width:100,position:"absolute",top:30,left:145,right:100, backgroundColor: 'red',}} source={require('../assets/33-338711_circle-user-icon-blue-hd-png-download.png')}  />
      
-    
+   <Button/>
     </NativeBaseProvider>
 
 );
 }
 const style = StyleSheet.create({
- 
-    txtContainer:{
-        flex:1,
-        justifyContent:'center',
-        alignItems:'center',      
+    pannel: {
+        width: "1045%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+     borderStartColor:"white"
       },
-
-    btn:{
-     
-      width:200,
-      backgroundColor: 'blue'
-    }
 
     text:{
       
         color:'blue',
-        fontSize:50,
+        fontSize:30,
         position:'relative',
-        left:'30%',
+        left:'40%',
         bottom:0,
         right:0,
-        top:40,
+        top:40
       },
+  
+ 
+    txtContainer:{
+        flex:2,
+        justifyContent:'center',
+        alignItems:'center',   
+        borderRadius: 800,   
+      },
+
+   
+    
 
 });
