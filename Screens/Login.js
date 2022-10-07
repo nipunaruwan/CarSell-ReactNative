@@ -2,13 +2,13 @@ import React from "react";
 import { View,Text, StyleSheet} from "react-native";
 import { NativeBaseProvider, Box, Stack, Input, Center, Image } from "native-base";
 import { Button } from "native-base";
-
+import Logintxt from "../Component/logintxt";
 
 export default function Login(){
 
     return(
        
-      <NativeBaseProvider>
+      <NativeBaseProvider  style={style.backgrond}>
       {/* <Box style={style.text}>Login</Box> */}
       <Text style={style.text}>Login</Text>
       <Stack style={style.container}>
@@ -21,6 +21,8 @@ export default function Login(){
         <Input variant="outline" placeholder="Password" />
         <Button mb="2.5" mt="5" style={style.btn} size="sm">Login</Button>
       </Stack>  
+
+      
     </NativeBaseProvider>
   )
 }
@@ -48,6 +50,7 @@ const style = StyleSheet.create({
     img: {
       width: 500,
       height:350,
+     
     },
 
     txtContainer:{
@@ -60,8 +63,14 @@ const style = StyleSheet.create({
      
       width:200,
       backgroundColor: 'blue'
-    }
+    },
 
+    backgrond:{
+backgroundColor: 'white',
+width: '100%',
+hieght:'100%',
+
+    }
   
 
   });
