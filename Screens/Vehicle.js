@@ -1,16 +1,20 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, Platform } from 'react-native';
+import { Text, View, StyleSheet, Image, Platform ,ImageBackground} from 'react-native';
 import { NativeBaseProvider,Stack,Input,Icon,Ionicons,Center } from "native-base";
 import Button from '../Component/Button';
 import Uploadbtn from '../Component/Uploadbtn';
 export default function Vehicle() {
 
-   
+  const localimage =require("../assets/user.png")
   return (
     <NativeBaseProvider style={style.pannel}>
-       
+         
+
          <Text style={style.text}></Text>
           <Stack  space={4} w="75%" maxW="300px" mx="auto" style={style.txtContainer}>
+        
+
+
           <Input variant="rounded" placeholder=" name" />
           <Input variant="rounded" placeholder="ID" />
         <Input variant="rounded" placeholder="address" />
@@ -18,7 +22,14 @@ export default function Vehicle() {
         <Input variant="rounded" placeholder="Email" />
 
 
+       
+
+       
+
+
         
+      
+    
     
       </Stack>  
 
@@ -60,10 +71,18 @@ const style = StyleSheet.create({
   
  
     txtContainer:{
-        flex:20,
+        flex:10,
         justifyContent:'center',
         alignItems:'center',   
-        borderRadius: 800,   
+        borderRadius: 700,   
+      },
+
+      img: {
+        position:'absolute',
+        flex: 1,
+  width:900,
+  height:600,
+        justifyContent: "center"
       },
 
     });
