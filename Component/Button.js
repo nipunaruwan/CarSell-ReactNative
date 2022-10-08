@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-export default function Button(label) {
+export default function Button(props) {
   return (
     <TouchableOpacity
     onPress={() => {}}
@@ -25,8 +25,9 @@ export default function Button(label) {
           fontWeight: '10',
           fontSize: 15,
           color: 'white',
-        }}>
-        Register
+           }}>
+         
+        {props.Text}
       </Text>
     </TouchableOpacity>
   )

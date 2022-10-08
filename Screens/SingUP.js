@@ -1,6 +1,6 @@
 import React from "react";
 import { View ,Text,StyleSheet,Box} from "react-native";
-import { NativeBaseProvider,Stack,Input,Image,Icon,MaterialIcons, InputLeftElement } from "native-base";
+import { NativeBaseProvider,Stack,Input,Image } from "native-base";
 import { border } from "native-base/lib/typescript/theme/styled-system";
 import Button from "../Component/Button";
 
@@ -19,10 +19,7 @@ return(
         <Input variant="rounded" placeholder="Email" />
         <Input variant="rounded" placeholder="password" />
 
-        <Input w={{
-      base: "75%",
-      md: "25%"
-    }} InputLeftElement={<Icon as={<MaterialIcons name="person" />} size={5} ml="2" color="muted.400" />} placeholder="Name" />
+
         
        
       
@@ -31,7 +28,7 @@ return(
       <Image
          style={{height:100, width:100,position:"absolute",top:30,left:145,right:100, backgroundColor: 'red',}} source={require('../assets/33-338711_circle-user-icon-blue-hd-png-download.png')}  />
      
-   <Button/>
+   <Button Text="Register"/>
     </NativeBaseProvider>
 
 );
