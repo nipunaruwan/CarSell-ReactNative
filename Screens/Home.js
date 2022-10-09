@@ -12,6 +12,7 @@ return(
     </ImageBackground>
 
    <Loader  />
+   
 
    <TouchableOpacity
   onPress={()=>{navigation.navigate("Login")}}

@@ -11,7 +11,7 @@ export default function Button(props) {
         borderRadius: 800,
         marginBottom: 50,
         width:100,
-       top:650,
+       top:605,
        right:4,
        left:148,
        margin:0,

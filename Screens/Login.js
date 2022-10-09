@@ -5,7 +5,7 @@ import { Button } from "native-base";
 
 
 
-export default function Login(){
+export default function Login({navigation}){
 
     return(
        
@@ -20,7 +20,11 @@ export default function Login(){
       <Stack style={style.txtContainer} space={4} w="75%" maxW="300px" mx="auto">
         <Input variant="outline" placeholder="User name" />
         <Input variant="outline" placeholder="Password" />
-        <Button mb="2.5" mt="5" style={style.btn} size="sm">Login</Button>
+        <Button mb="2.5" mt="5" style={style.btn} size="sm" onPress={()=>{navigation.navigate("Vehicle")}}>Login</Button>
+
+        <Button size="sm" variant="link" colorScheme="primary" onPress={()=>{navigation.navigate("SingUP")}}>
+           Register Now
+          </Button>
       </Stack>  
 
     
@@ -38,7 +42,8 @@ const style = StyleSheet.create({
       left:'30%',
       bottom:0,
       right:0,
-      top:40
+      top:20,
+      fontFamily:"arial"
     },
 
     container:{
@@ -50,7 +55,7 @@ const style = StyleSheet.create({
 
     img: {
       width: 500,
-      height:350,
+      height:310,
      
     },
 
