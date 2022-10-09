@@ -18,6 +18,12 @@ export default function App() {
   return (
   
 <NavigationContainer>
+<Stack.Navigator>
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="SingUP" component={SingUP} />
+      <Stack.Screen name="Vehicle" component={Vehicle} />
+    </Stack.Navigator>
 
 </NavigationContainer>
    

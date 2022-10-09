@@ -2,7 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { Button, Stack, Center, NativeBaseProvider } from "native-base";
 
-const Loader=()=>{
+const Loader=({navigation})=>{
   return <Stack direction={{
     base: "column",
     md: "row"
@@ -12,7 +12,7 @@ const Loader=()=>{
   }}>
      
      
-      <Button isLoading spinnerPlacement="end" isLoadingText="Get start">
+      <Button isLoading spinnerPlacement="end" isLoadingText="Get start" onPress={()=>{navigation.navigate("Login")}}>
      
       </Button>
      
