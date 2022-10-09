@@ -5,7 +5,7 @@ import Button from '../Component/Button';
 import Uploadbtn from '../Component/Uploadbtn';
 export default function Vehicle() {
 
-  const localimage =require("../assets/user.png")
+ 
   return (
     <NativeBaseProvider style={style.pannel}>
          
@@ -21,10 +21,6 @@ export default function Vehicle() {
         <Input variant="rounded" placeholder="contact" />
         <Input variant="rounded" placeholder="Email" />
 
-
-       
-
-       
 
 
         
@@ -71,7 +67,7 @@ const style = StyleSheet.create({
   
  
     txtContainer:{
-        flex:10,
+        flex:70,
         justifyContent:'center',
         alignItems:'center',   
         borderRadius: 700,   
